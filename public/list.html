@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task List</title>
+</head>
+<body>
+
+<h2>Task List</h2>
+
+<table border="1" id="taskTable">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Priority</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody id="taskBody"></tbody>
+</table>
+
+<script>
+async function loadTasks(){
+
+  try{
+
+    const res = await fetch("http://localhost:5000/api/tasks");
+
+    const data = await res.json();
+
+    const tasks = data.tasks;  
+
+    const tbody = document.getElementById("taskBody");
+
+    tasks.forEach(task => {
+
+      const row = document.createElement("tr");
+
+      row.innerHTML = `
+        <td>${task.title}</td>
+        <td>${task.priority}</td>
+        <td>${task.status}</td>
+        <td>
+          <button onclick="deleteTask('${task._id}')">Delete</button>
+        </td>
+      `;
+
+      tbody.appendChild(row);
+
+    });
+
+  }
+  catch(err){
+    console.log(err);
+  }
+
+}
+
+document.addEventListener("DOMContentLoaded", loadTasks);
+
+</script>
+
+</body>
+</html>
