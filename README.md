@@ -5,7 +5,7 @@
 A simple Task Management System built with **Node.js**, **Express.js**, and **MongoDB**, along with a basic HTML/CSS frontend to interact with the APIs.
 
 ---
-## 🚀 Features
+##  Features
 - Create, read, update, and delete tasks
 - Task fields:
   - `title` (String)
@@ -18,10 +18,9 @@ A simple Task Management System built with **Node.js**, **Express.js**, and **Mo
   - Task creation form
   - Task list table with actions (mark complete, delete)
 ---
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone the repository
-```bash
 git clone https://github.com/your-username/task_management_system.git
 cd task_management_system
 
