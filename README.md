@@ -32,6 +32,13 @@ PORT=5000
 
 ## Task API Endpoints (request and response)
 
+## Frontend (Create Task)
+<img width="944" height="917" alt="image" src="https://github.com/user-attachments/assets/e23b222f-d9c5-4f00-a0d1-9cd4ac1045a7" />
+
+## Frontend (Show Tasks)
+<img width="944" height="855" alt="image" src="https://github.com/user-attachments/assets/5e771f45-c188-41eb-80b3-7a372ab44ac3" />
+
+
 ### 1. POST/api/task
 <img width="976" height="738" alt="image" src="https://github.com/user-attachments/assets/e2e9011d-8e2e-4f20-a008-94de9b132266" />
 
@@ -55,10 +62,3 @@ PORT=5000
 
 <img width="1386" height="460" alt="image" src="https://github.com/user-attachments/assets/25ea4f5f-ef62-4bcd-a621-cd3ba592f503" />
 
-
-## Frontend (Create Task)
-<img width="650" height="651" alt="image" src="https://github.com/user-attachments/assets/431ca736-2e60-45bf-b4ac-a6ba73cd054d" />
-
-## Frontend (Show Tasks)
-
-<img width="730" height="559" alt="image" src="https://github.com/user-attachments/assets/36b4c112-3a90-4c14-8f7b-ad44d633909d" />
